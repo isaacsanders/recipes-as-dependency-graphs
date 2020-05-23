@@ -30,3 +30,4 @@ jobs:
         git config user.name "Isaac Sanders"
         git config user.email "isaac@isaacbfsanders.com"
         git commit -m "Generate Graphviz Files"
+        git push origin master
