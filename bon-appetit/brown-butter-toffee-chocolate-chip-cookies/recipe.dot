@@ -1,9 +1,21 @@
 digraph recipe {
+rankdir=BT
   node [type=record];
   butter [label="2 sticks|Unsalted Butter"];
   saucepan [type=diamond, label="Saucepan"];
   brown_butter [label="Brown Butter"];
   brown_butter -> butter;
   brown_butter -> saucepan;
+  dark_brown_sugar [label="215 g|Dark Brown Sugar"];
+  granulated_sugar [label="73 g|Granulated Sugar"];
+  sugar_and_butter [label="Combine in mixing bowl"];
+  sugar_and_butter -> dark_brown_sugar;
+  sugar_and_butter -> granulated_sugar;
+  sugar_and_butter -> brown_butter;
+  eggs [label="2 Large Eggs"];
+  vanilla [label="2 tsp|Vanilla Extract"];
+  wet_ingredients [label="Wet Ingredients"];
+  wet_ingredients -> eggs;
+  wet_ingredients -> vanilla;
   cookies [label="Brown Butter Toffee Chocolate Chip Cookies"];
 }
