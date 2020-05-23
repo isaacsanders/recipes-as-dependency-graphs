@@ -1,6 +1,6 @@
 digraph recipe {
-rankdir=BT
-  node [type=record];
+  rankdir=BT;
+  node [shape=record];
   butter [label="2 sticks|Unsalted Butter"];
   saucepan [type=diamond, label="Saucepan"];
   brown_butter [label="Brown Butter"];
