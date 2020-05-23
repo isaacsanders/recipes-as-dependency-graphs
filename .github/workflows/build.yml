@@ -24,7 +24,9 @@ jobs:
     - name: Setup Graphviz
       uses: ts-graphviz/setup-graphviz@v1
     - name: Run make
-      run: make all
+      run: |
+        make all
+        git add .
     - name: Workspace Commit
       uses: gha-utilities/workspace-commit@v0.0.3
       with:
