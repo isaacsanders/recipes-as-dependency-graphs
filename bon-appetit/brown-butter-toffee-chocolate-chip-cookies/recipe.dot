@@ -14,8 +14,18 @@ digraph recipe {
   sugar_and_butter -> brown_butter;
   eggs [label="2 Large Eggs"];
   vanilla [label="2 tsp|Vanilla Extract"];
-  wet_ingredients [label="Wet Ingredients"];
+  wet_ingredients [label="Mix until lighter and fluffy"];
   wet_ingredients -> eggs;
   wet_ingredients -> vanilla;
+  ap_flour [label="250 g|All Purpose Flour"];
+  baking_soda [label="1 tsp|Baking Soda"];
+  kosher_salt [label="3/4 tsp|Kosher Salt"];
+  dry_ingredients [label="Whisk together"];
+  dry_ingredients -> ap_flour;
+  dry_ingredients -> baking_soda;
+  dry_ingredients -> kosher_salt;
+  dough [label="Mix to combine"];
+  dough -> dry_ingredients;
+  dough -> wet_ingredients;
   cookies [label="Brown Butter Toffee Chocolate Chip Cookies"];
 }
