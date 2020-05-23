@@ -1,2 +1,1 @@
-# recipes-as-dependency-graphs
-Recipes as Dependency Graphs
+# Recipes as Dependency Graphs
