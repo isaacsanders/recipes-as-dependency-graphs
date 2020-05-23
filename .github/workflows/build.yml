@@ -32,5 +32,6 @@ jobs:
       with:
         author: Isaac Sanders
         email: isaac@isaacbfsanders.com
-        paths: "."
+        paths: |
+          .
         message: Generate Graphviz Files
