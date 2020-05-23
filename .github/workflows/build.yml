@@ -27,11 +27,6 @@ jobs:
       run: |
         make all
         git add .
-    - name: Workspace Commit
-      uses: gha-utilities/workspace-commit@v0.0.3
-      with:
-        author: Isaac Sanders
-        email: isaac@isaacbfsanders.com
-        paths: |
-          .
-        message: Generate Graphviz Files
+        git config user.name "Isaac Sanders"
+        git config user.email "isaac@isaacbfsanders.com"
+        git commit -m "Generate Graphviz Files"
