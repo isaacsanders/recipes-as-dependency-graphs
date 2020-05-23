@@ -25,6 +25,7 @@ jobs:
       uses: ts-graphviz/setup-graphviz@v1
     - name: Run make
       run: |
+        find . -name "*.dot" | xargs -n1 touch
         find . -name "*.dot" | sed -e "s/\.dot/.svg/g" | xargs make
         git add .
         git config user.name "Isaac Sanders"
