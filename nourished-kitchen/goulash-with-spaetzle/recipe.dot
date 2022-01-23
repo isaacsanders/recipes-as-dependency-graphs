@@ -1,0 +1,8 @@
+digraph recipe {
+  rankdir=BT;
+  node [shape=record];
+  goulash_with_spaeztle [label="Beef Goulash with Spaeztle"];
+  goulash_with_spaeztle -> goulash;
+  goulash_with_spaeztle -> spaeztle;
+  goulash_with_spaeztle -> chopped_parsley;
+}
