@@ -8,7 +8,7 @@ digraph recipe {
   stovetop_goulash -> browning_goulash;
   stovetop_goulash -> beef_bone_broth;
   stovetop_goulash -> vinegar;
-  over [label="Oven preheated to 275°F"];
+  oven [label="Oven preheated to 275°F"];
   goulash [label="Beef Goulash"];
   goulash -> stovetop_goulash;
   goulash -> oven;
