@@ -1,6 +1,22 @@
 digraph recipe {
   rankdir=BT;
   node [shape=record];
+  browning_goulash [label="Spices, Aromatics, and Beef"];
+  beef_bone_broth [label="1 cup|Beef Bone Broth"];
+  vinegar [label="1 tbsp|Red Wine Vinegar"];
+  stovetop_goulash [label="Stovetop Goulash"];
+  stovetop_goulash -> browning_goulash;
+  stovetop_goulash -> beef_bone_broth;
+  stovetop_goulash -> vinegar;
+  over [label="Oven preheated to 275°F"];
+  goulash [label="Beef Goulash"];
+  goulash -> stovetop_goulash;
+  goulash -> oven;
+  spaeztle [label="Spaeztle"];
+  spaeztle -> cooked_spaeztle;
+  spaeztle -> butter;
+  spaeztle -> frying_pan;
+  chopped_parsley [label="Chopped Parsley"];
   goulash_with_spaeztle [label="Beef Goulash with Spaeztle"];
   goulash_with_spaeztle -> goulash;
   goulash_with_spaeztle -> spaeztle;
