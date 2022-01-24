@@ -12,6 +12,12 @@ digraph recipe {
   goulash [label="Beef Goulash"];
   goulash -> stovetop_goulash;
   goulash -> oven;
+  cooked_spaeztle [label="Cooked Spaeztle"];
+  cooked_spaeztle -> spaeztle_batter;
+  cooked_spaeztle -> spaeztle_board;
+  cooked_spaeztle -> boiling_water;
+  butter [label="Butter"];
+  frying_pan [label="Frying Pan"];
   spaeztle [label="Spaeztle"];
   spaeztle -> cooked_spaeztle;
   spaeztle -> butter;
