@@ -1,4 +1,8 @@
 digraph recipe {
   rankdir=BT;
   node [shape=record];
+  olive_oil [label="Olive Oil"];
+  dutch_oven [label="Dutch Oven"];
+  heat_oil [label="Heat Oil in a Dutch oven over medium-high heat"];
+  olive_oil, dutch_oven -> heat_oil;
 }
