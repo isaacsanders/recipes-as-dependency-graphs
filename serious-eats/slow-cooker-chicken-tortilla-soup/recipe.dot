@@ -4,5 +4,14 @@ digraph recipe {
   olive_oil [label="Olive Oil"];
   dutch_oven [label="Dutch Oven"];
   heat_oil [label="Heat Oil in a Dutch oven over medium-high heat"];
-  olive_oil, dutch_oven -> heat_oil;
+  heat_oil -> olive_oil, dutch_oven;
+  salt_and_pepper [label="Salt and Pepper"];
+  chicken_thighs [label="Chicken Thighs"];
+  season_chicken -> salt_and_pepper, chicken_thighs;
+  browned_chicken -> season_chicken, heat_oil;
+  dutch_oven_with_drippings, transfer_chicken -> slow_cooker, browned_chicken;
+  chopped_onion [label="1 large yellow or white onion, finely chopped"];
+  jalapeno [label="1 large japapeno, finely chopped"];
+  browning_aromatics -> chopped_onion, jalapeno, dutch_oven_with_drippings;
+  
 }
