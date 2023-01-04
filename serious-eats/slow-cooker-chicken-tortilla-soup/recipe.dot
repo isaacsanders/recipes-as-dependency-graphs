@@ -1,0 +1,4 @@
+digraph recipe {
+  rankdir=BT;
+  node [shape=record];
+}
