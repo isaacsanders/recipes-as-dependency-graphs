@@ -12,6 +12,11 @@ digraph recipe {
   dutch_oven_with_drippings, transfer_chicken -> slow_cooker, browned_chicken;
   chopped_onion [label="1 large yellow or white onion, finely chopped"];
   jalapeno [label="1 large japapeno, finely chopped"];
-  browning_aromatics -> chopped_onion, jalapeno, dutch_oven_with_drippings;
-  
+  softened_aromatics -> chopped_onion, jalapeno, dutch_oven_with_drippings;
+  fragrant_aromatics -> softened_aromatics, garlic;
+  fragrant_spices_and_aromatics -> fragrant_aromatics, chili_powder, cumin, cocoa_powder;
+  boiling_beer_and_fragrant_mixture -> fragrant_spices_and_aromatics, beer;
+  slow_cooking_mixture -> transfer_chicken, boiling_beer_and_fragrant_mixture, bay_leaves, thyme, chipotle_pepper, tomatoes, tomato_paste, vinegar, green_chiles, chicken_stock, salt_and_pepper;
+  soup -> discard_bay_leaves_and_thyme, slow_cooking_mixture;
+  garnished_soup -> soup, tortilla_strips;
 }
